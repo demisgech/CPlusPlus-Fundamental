@@ -11,7 +11,7 @@ int main()
         if (number % i == 0)
             counter++;
     }
-    // counter exaclty == 2 number is prime
+    // if counter exaclty == 2 number is prime
     if (counter == 2)
         cout << number << " is prime." << endl;
     else
