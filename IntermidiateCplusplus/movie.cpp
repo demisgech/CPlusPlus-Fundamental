@@ -26,6 +26,7 @@ struct Movie
     }
 };
 
+// Operator ovelodding
 bool operator==(const Movie &first, const Movie &second)
 {
     return (
@@ -42,7 +43,10 @@ int main()
     // int numbers[] = {12, 34, 56};
     // auto [x, y, z] = numbers;
     // cout << x << "," << y << "," << z << endl;
+
     // Movie second = {"Terminator", 1984, true};
+
+    //*******Object Strucure binding ******
     // C++ : Structure binding
     // JS : Destructuring
     // Python : Unpacking
@@ -52,12 +56,15 @@ int main()
     // title = "Avator";
     // cout << title;
 
-    // vector<Movie> movies;
-    // movies.push_back({"Terminator 1", 1984, true});
-    // movies.push_back({"Terminator 2", 1991, true});
+    // Using the built in vector class to allocation memory dynamically for the movies object.
+    /*
+      vector<Movie> movies;
+      movies.push_back({"Terminator 1", 1984, true});
+      movies.push_back({"Terminator 2", 1991, true});
 
-    // for (const auto &second : movies)
-    //     cout << second.title << endl;
+      for (const auto &second : movies)
+          cout << second.title << endl;
+   */
 
     Movie movie1 = {"The Lion King", {1994, 1, 3}, true};
     Movie movie2 = {"The Lion King", {1994, 1, 3}, true};
@@ -70,64 +77,67 @@ int main()
     if (movie1 == movie2)
         cout << "Equal" << endl;
 
-    // int capacity = 5;
-    // Movie *actionMovie = new Movie[capacity];
-    // int entries = 0;
+    // Dynamically allocating memory to resize the size of array of movie object.
+    /*
+      int capacity = 5;
+      Movie *actionMovie = new Movie[capacity];
+      int entries = 0;
 
-    // while (true)
-    // {
-    //     cout << "Title: ";
-    //     cin >> actionMovie[entries].title;
-    //     if (cin.fail())
-    //         break;
+      while (true)
+      {
+          cout << "Title: ";
+          cin >> actionMovie[entries].title;
+          if (cin.fail())
+              break;
 
-    //     cout << "Year: ";
-    //     cin >> actionMovie[entries].releaseDate.year;
-    //     if (cin.fail())
-    //         break;
+          cout << "Year: ";
+          cin >> actionMovie[entries].releaseDate.year;
+          if (cin.fail())
+              break;
 
-    //     cout << "Month: ";
-    //     cin >> actionMovie[entries].releaseDate.month;
-    //     if (cin.fail())
-    //         break;
+          cout << "Month: ";
+          cin >> actionMovie[entries].releaseDate.month;
+          if (cin.fail())
+              break;
 
-    //     cout << "Day: ";
-    //     cin >> actionMovie[entries].releaseDate.day;
-    //     if (cin.fail())
-    //         break;
-    //     entries++;
+          cout << "Day: ";
+          cin >> actionMovie[entries].releaseDate.day;
+          if (cin.fail())
+              break;
+          entries++;
 
-    //     if (entries == capacity)
-    //     {
-    //         capacity++;
-    //         Movie *tempMovie = new Movie[capacity];
-    //         for (int i = 0; i < entries; i++)
-    //         {
-    //             tempMovie[i].title = actionMovie[i].title;
-    //             tempMovie[i].releaseDate.year = actionMovie[i].releaseDate.year;
-    //             tempMovie[i].releaseDate.month = actionMovie[i].releaseDate.month;
-    //             tempMovie[i].releaseDate.day = actionMovie[i].releaseDate.day;
-    //             tempMovie[i].isPopular = actionMovie[i].isPopular;
-    //         }
-    //         delete[] actionMovie;
-    //         actionMovie = tempMovie;
+          if (entries == capacity)
+          {
+              capacity++;
+              Movie *tempMovie = new Movie[capacity];
+              for (int i = 0; i < entries; i++)
+              {
+                  tempMovie[i].title = actionMovie[i].title;
+                  tempMovie[i].releaseDate.year = actionMovie[i].releaseDate.year;
+                  tempMovie[i].releaseDate.month = actionMovie[i].releaseDate.month;
+                  tempMovie[i].releaseDate.day = actionMovie[i].releaseDate.day;
+                  tempMovie[i].isPopular = actionMovie[i].isPopular;
+              }
+              delete[] actionMovie;
+              actionMovie = tempMovie;
 
-    //         delete[] tempMovie;
-    //         tempMovie = nullptr;
-    //     }
-    // }
+              delete[] tempMovie;
+              tempMovie = nullptr;
+          }
+      }
 
-    // for (int i = 0; i < entries; i++)
-    // {
-    //     cout << "+++++ Movie Information Summary ++++" << endl;
-    //     cout << "Title: " << actionMovie[i].title << endl;
-    //     cout << "Year: " << actionMovie[i].releaseDate.year << endl;
-    //     cout << "Month:" << actionMovie[i].releaseDate.month << endl;
-    //     cout << "Day: " << actionMovie[i].releaseDate.day << endl;
-    //     cout << "Is Popular: " << boolalpha << actionMovie[i].isPopular << endl;
-    // }
+      for (int i = 0; i < entries; i++)
+      {
+          cout << "+++++ Movie Information Summary ++++" << endl;
+          cout << "Title: " << actionMovie[i].title << endl;
+          cout << "Year: " << actionMovie[i].releaseDate.year << endl;
+          cout << "Month:" << actionMovie[i].releaseDate.month << endl;
+          cout << "Day: " << actionMovie[i].releaseDate.day << endl;
+          cout << "Is Popular: " << boolalpha << actionMovie[i].isPopular << endl;
+      }
 
-    // delete[] actionMovie;
+      delete[] actionMovie;
+     */
 
     return 0;
 }
