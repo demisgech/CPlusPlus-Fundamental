@@ -30,7 +30,7 @@ double Rectangle::getWidth()
 
 void Rectangle::setHeight(double theHeight)
 {
-    if (height < 0)
+    if (theHeight < 0)
         throw invalid_argument{"Height cannot be negative."};
     // height = theHeight;
     // (*this).height = theHeight;
