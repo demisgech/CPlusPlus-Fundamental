@@ -7,4 +7,7 @@ project(HelloWorld
 add_executable(Hello main.cpp 
                Shapes/diamond.cpp
                Shapes/rectangularSquence.cpp
-               Shapes/xPyramid.cpp )
+               Shapes/xPyramid.cpp 
+               structure/point.cpp
+               structure/Rectangle.cpp
+               structure/TextBox.cpp)

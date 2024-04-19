@@ -1,15 +1,12 @@
-// #include "Shapes/diamond.hpp"
-// #include "Shapes/rectangularSequence.hpp"
-#include "Shapes/xPyramid.hpp"
+#include "structure/TextBox.h"
 #include <iostream>
 
 using namespace std;
 int main()
 {
+    TextBox box;
+    box.setValue("Welcome to C++.");
+    cout << box.getValue() << endl;
 
-    // diamond(8);
-
-    // rectangularSequence(10);
-    xPyramid(15);
     return 0;
 }
