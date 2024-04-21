@@ -5,9 +5,6 @@ project(HelloWorld
         DESCRIPTION "Build a hello world project"
         LANGUAGES CXX)
 add_executable(Hello main.cpp 
-               Shapes/diamond.cpp
-               Shapes/rectangularSquence.cpp
-               Shapes/xPyramid.cpp 
-               structure/point.cpp
-               structure/Rectangle.cpp
-               structure/TextBox.cpp)
+             FunctionalProgramming/greet.cpp
+             FunctionalProgramming/calculateTax.cpp
+             FunctionalProgramming/calculateSum.cpp)
