@@ -1,8 +1,15 @@
 #ifndef __RECTANGLE__H__
 #define __RECTANGLE__H__
+
+#include <string>
+using namespace std;
+
 struct Rectangle
 {
 public:
+    Rectangle() = default;
+    Rectangle(double width, double height);
+    Rectangle(double width, double height, const string &color);
     void draw();
     double getArea();
 
@@ -23,5 +30,6 @@ public:
 private:
     double width;
     double height;
+    string color;
 };
 #endif //!__RECTANGLE__H__

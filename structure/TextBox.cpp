@@ -9,3 +9,7 @@ string TextBox::getValue()
 {
     return value;
 }
+
+explicit TextBox::TextBox(const string &value) : value{value}
+{
+}

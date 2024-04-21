@@ -1,12 +1,11 @@
-#include "structure/TextBox.h"
+#include "structure/Box.h"
 #include <iostream>
 
 using namespace std;
+
 int main()
 {
-    TextBox box;
-    box.setValue("Welcome to C++.");
-    cout << box.getValue() << endl;
+    Box box(12, 23, 45);
 
     return 0;
 }

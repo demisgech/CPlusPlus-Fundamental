@@ -8,6 +8,9 @@ using namespace std;
 struct TextBox
 {
 public:
+    TextBox() = default;
+    explicit TextBox(const string &value);
+
     void setValue(const string &value);
     string getValue();
 

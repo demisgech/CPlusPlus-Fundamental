@@ -5,6 +5,4 @@ project(HelloWorld
         DESCRIPTION "Build a hello world project"
         LANGUAGES CXX)
 add_executable(Hello main.cpp 
-             FunctionalProgramming/greet.cpp
-             FunctionalProgramming/calculateTax.cpp
-             FunctionalProgramming/calculateSum.cpp)
+           structure/Box.cpp)
